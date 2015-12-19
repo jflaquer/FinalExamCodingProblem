@@ -7,14 +7,26 @@
 
 <AnchorPane prefHeight="363.0" prefWidth="693.0" stylesheets="@DarkTheme.css" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ch.makery.address.view.MortgageController">
    <children>
-      <SplitPane dividerPositions="0.4126984126984127" layoutX="153.0" layoutY="70.0" prefHeight="300.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <SplitPane dividerPositions="0.33" layoutX="153.0" layoutY="70.0" prefHeight="300.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
         <items>
-          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" style="-fx-background-color: Black;">
                <children>
+                  <Label layoutX="56.0" layoutY="57.0" text="Credit Score" />
+                  <Label layoutX="73.0" layoutY="111.0" text="Income" />
+                  <Label layoutX="69.0" layoutY="164.0" text="Expense" />
+                  <Label layoutX="58.0" layoutY="219.0" text="House Cost" />
+                  <Label layoutX="79.0" layoutY="292.0" text="Years" />
                </children>
             </AnchorPane>
-          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" >
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" style="-fx-background-color: Black;">
                <children>
+                  <TextField fx:id="Credit_score" layoutX="24.0" layoutY="52.0" />
+                  <TextField fx:id="In" layoutX="24.0" layoutY="105.0" />
+                  <TextField fx:id="Expense" layoutX="24.0" layoutY="165.0" />
+                  <TextField fx:id="Cost_of_house" layoutX="24.0" layoutY="217.0" />
+                  <Label layoutX="340.0" layoutY="121.0" text="Mortgage:" />
+                  <Label fx:id="finalMortgage" layoutX="342.0" layoutY="189.0" text="Label" />
+                  <ComboBox fx:id="years" layoutX="52.0" layoutY="286.0" onAction="#HandleMortgage" prefWidth="150.0" />
                </children>
             </AnchorPane>
         </items>
